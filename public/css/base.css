@@ -1,0 +1,200 @@
+.circle {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+  overflow: hidden;
+  background-color: #e8e8e8;
+  position: relative;
+  box-shadow: 0px 4px 7px -4px black;
+  z-index: 1;
+	/* width and height can be anything, as long as they're equal */
+}
+
+.circle_fill::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  animation: circleWipe linear 2.5s forwards;
+}
+
+@keyframes circleWipe {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+@keyframes barWipe {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+.bar {
+  width: 46px;
+  height: 30px;
+  margin-top: 35px;
+  margin-left: -2px;
+  margin-right: -2px;
+  position: relative;
+  background-color: #e8e8e8;
+}
+
+
+.bar::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  margin-left: -2px;
+  height: inherit;
+  z-index: -1;
+  box-shadow: 0px 4px 4px -4px black;
+}
+
+.circle.empty {
+  z-index: 0;
+}
+
+.bar.empty {
+  z-index: 1;
+}
+
+.circle.filled {
+  z-index: 2;
+}
+
+.bar.filled {
+  z-index: 3;
+}
+
+.bar_fill::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  animation: barWipe linear 2.5s forwards;
+}
+
+.key1 {
+  color: #247789;
+}
+
+.key2 {
+  color: #bf3938;
+}
+
+.green::before {
+  background-color: inherit;
+}
+
+.key1 .green::before {
+  background-color: #247789;
+}
+
+.key2 .green::before {
+  background-color: #bf3938;
+}
+
+.red::before {
+  background-color: #bf3938;
+}
+
+.disabled {
+  background-color: #e8e8e8;
+}
+
+.result {
+  display: flex;
+  flex-direction: row;
+  height: 110px;
+}
+
+.labels {
+  display: flex;
+  flex-direction: row;
+  margin-left: 138px;
+  width: 432px;
+  height: 40px;
+}
+
+.label {
+  flex-grow: 1;
+}
+
+
+.name {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  padding-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+
+body {
+  background: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  padding: 30px;
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+  font-size: 12px;
+  margin: 0 2px;
+  padding: 0 5px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+h1 {
+  border-bottom: 1px solid #ddd;
+  font-size: 2.5em;
+}
+
+h2 {
+  border-bottom: 1px solid #eee;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+p, ul {
+  margin: 15px 0;
+}
+
+ul {
+  padding-left: 30px;
+}

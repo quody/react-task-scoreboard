@@ -1,0 +1,44 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'e:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'e:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle react-tutorial@0.0.0~prestart: react-tutorial@0.0.0
+6 silly lifecycle react-tutorial@0.0.0~prestart: no script for prestart, continuing
+7 info lifecycle react-tutorial@0.0.0~start: react-tutorial@0.0.0
+8 verbose lifecycle react-tutorial@0.0.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle react-tutorial@0.0.0~start: PATH: e:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;e:\SuhinaWeb\react-highscore\node_modules\.bin;c:\Users\Aleksi\bin;.;E:\Program Files (x86)\Git\local\bin;E:\Program Files (x86)\Git\mingw\bin;E:\Program Files (x86)\Git\bin;c:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;c:\ProgramData\Oracle\Java\javapath;c:\Program Files\Common Files\Microsoft Shared\Windows Live;c:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;c:\Program Files (x86)\Windows Live\Shared;e:\Program Files (x86)\Livestreamer;e:\Program Files\Java\jre7\bin\javaw.exe;c:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;e:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;c:\Windows\System32;e:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin;e:\Program Files\nodejs\;c:\Program Files (x86)\Skype\Phone\;e:\Program Files (x86)\Csound6\bin;c:\Windows\System32;e:\MinGW\bin;e:\Program Files\Java\jre7\bin;c:\Program Files (x86)\Java\jre7\bin\javaw.exe;e:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin;c:\Users\Aleksi\AppData\Roaming\npm;e:\Python27;e:\Python27\Scripts;c:\Users\Aleksi\AppData\Local\atom\bin
+10 verbose lifecycle react-tutorial@0.0.0~start: CWD: e:\SuhinaWeb\react-highscore
+11 silly lifecycle react-tutorial@0.0.0~start: Args: [ '/d /s /c', 'node server.js' ]
+12 silly lifecycle react-tutorial@0.0.0~start: Returned: code: 1  signal: null
+13 info lifecycle react-tutorial@0.0.0~start: Failed to exec start script
+14 verbose stack Error: react-tutorial@0.0.0 start: `node server.js`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (e:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:233:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (e:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at ChildProcess.emit (events.js:172:7)
+14 verbose stack     at maybeClose (internal/child_process.js:818:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid react-tutorial@0.0.0
+16 verbose cwd e:\SuhinaWeb\react-highscore
+17 error Windows_NT 6.1.7601
+18 error argv "e:\\Program Files\\nodejs\\node.exe" "e:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+19 error node v5.0.0
+20 error npm  v3.3.6
+21 error code ELIFECYCLE
+22 error react-tutorial@0.0.0 start: `node server.js`
+22 error Exit status 1
+23 error Failed at the react-tutorial@0.0.0 start script 'node server.js'.
+23 error This is most likely a problem with the react-tutorial package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node server.js
+23 error You can get their info via:
+23 error     npm owner ls react-tutorial
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
